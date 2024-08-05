@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container  {
+    width: 100%;
+    min-height: 100vh; 
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 10px;
+}
+
+.logo   {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.logo h1{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+.logo h1 img{
+    height: 60px;
+    margin-left: 13px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 25px;
+    margin: 25px 25px 25px 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background: #0d8395;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8.5px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #878686;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(checked.png);
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #dae6ff;
+}
+
+#checkComplete{
+    align-content: center;
+    font-size: 45px;
+    padding-top: 10px;
+    color: red;
+    font-weight: bolder;
+}
